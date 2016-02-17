@@ -1,0 +1,43 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-home {
+  background-color: #003945;
+  min-height: 100vh;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.home {
+  color: white;
+  font-weight: 100;
+  font-size: 100;
+}
+
+h1.home {
+  font-size: 60px;
+  color: #fff4be;
+}
+
+a.btn.btn-lg.btn-default.btn-home {
+  background-color: transparent;
+  border-width: 2px;
+  color: #72ac95;
+  font-weight: 100;
+  border-color: #47756c;
+  margin-top: 20px;
+  text-shadow: 0 0 0 #72ac95;
+}
+
+a.btn.btn-lg.btn-default.btn-home:hover {
+  opacity: 0.4;
+}
+
+img.img-circle.img-thumbnail.home-image {
+  height: 200px;
+}
+
+.title {
+  padding-top: 50px;
+}

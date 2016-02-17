@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'figaro'
-
+gem 'omniauth-instagram'
 
 gem 'rails', '4.2.4'
 gem 'pg'
@@ -15,9 +15,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'mocha'
+  gem 'shoulda'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   # gem 'spring'
+end
+
+group :production do
+ gem "rails_12factor"
 end
