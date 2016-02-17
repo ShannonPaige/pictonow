@@ -1,0 +1,78 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/shannonpaige/code/pictonow/app/models/user.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/shannonpaige/code/pictonow/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/shannonpaige/code/pictonow/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null
+      ],
+      "/Users/shannonpaige/code/pictonow/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/shannonpaige/code/pictonow/app/controllers/users_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/shannonpaige/code/pictonow/app/helpers/application_helper.rb": [
+        0,
+        0
+      ]
+    },
+    "timestamp": 1455689119
+  }
+}

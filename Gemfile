@@ -23,6 +23,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'mocha'
   gem 'shoulda'
+  gem 'mrspec'
 end
 
 group :development do
