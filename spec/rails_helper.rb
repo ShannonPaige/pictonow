@@ -8,7 +8,6 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 require "database_cleaner"
-require "mocha/mini_test"
 require "simplecov"
 
 SimpleCov.start "rails"
