@@ -1,16 +1,49 @@
 <div class="container-fluid container-home">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h1 class="home">Welcome <%= current_user.nickname %></h1>
-    <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
-    <h2 class="home"> <%= current_user.name %></h2>
-    <h2 class="home"> <%= current_user.email %> </h2>
-    <h2 class="home"> <%= current_user.bio %> </h2>
-    <h2 class="home"> <%= current_user.website %> </h2>
-    <%= link_to "View Your Photos", user_pictures_path, class: "btn btn-lg btn-default btn-home" %>
-    <%= link_to "View Your Friends", "/logout", class: "btn btn-lg btn-default btn-home" %>
-    <%= link_to "View the Dogs of Instagram", "/logout", class: "btn btn-lg btn-default btn-home" %>
-    <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home" %>
+  <div class="row profile">
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+      <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+    </div>
+    <div class="col-md-4">
+      <h1 class="home"> <%= current_user.nickname %></h1>
+      <h2 class="home"> <%= current_user.name %></h2>
+      <h2 class="home"> <%= current_user.email %> </h2>
+      <h2 class="home"> <%= current_user.bio %> </h2>
+      <h2 class="home"> <%= current_user.website %> </h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="following"><%= @user_data.counts[:media] %> posts</h4>
+        </div>
+        <div class="col-md-4">
+          <h4 class="following"><%= @user_data.counts[:followed_by] %> followers</h4>
+        </div>
+        <div class="col-md-4">
+          <h4 class="following"><%= @user_data.counts[:follows] %> following</h4>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-md-2">
+      <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home" %>
+    </div>
+    <div class="col-md-2"></div>
   </div>
-  <div class="col-md-2"></div>
+  <div class="row">
+    <% @pictures.each do |picture| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= image_tag picture.images[:low_resolution][:url], class: "img-responsive" %>
+          <div class="caption">
+            <h4><%= picture.caption[:text] %></h4>
+            <p>Likes:
+              <%= picture.likes[:count] %> ||
+              Comments:
+              <%= picture.comments[:count] %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

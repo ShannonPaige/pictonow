@@ -14,4 +14,15 @@ class User < ActiveRecord::Base
     user.save
     user
   end
+
+  def self.profile(service)
+    profile_info = service.user_info
+    build_object(profile_info[:data])
+  end
+
+  private
+
+    def self.build_object(data)
+      OpenStruct.new(data)
+    end
 end

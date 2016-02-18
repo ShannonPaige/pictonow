@@ -5,7 +5,7 @@
 .container-home {
   background-color: #003945;
   min-height: 100vh;
-  padding-top: 10vh;
+  padding: 3vh 5vh;
   text-align: center;
 }
 
@@ -20,13 +20,18 @@ h1.home {
   color: #fff4be;
 }
 
+.following {
+  color: #fff4be;
+  font-weight: bold;
+}
+
 a.btn.btn-lg.btn-default.btn-home {
   background-color: transparent;
   border-width: 2px;
   color: #72ac95;
   font-weight: 100;
   border-color: #47756c;
-  margin-top: 20px;
+  margin-top: 35px;
   text-shadow: 0 0 0 #72ac95;
 }
 
@@ -40,4 +45,12 @@ img.img-circle.img-thumbnail.home-image {
 
 .title {
   padding-top: 50px;
+}
+
+.thumbnail {
+    height: 500px;
+}
+
+.profile {
+  padding: 10px 0px 25px 0px;
 }

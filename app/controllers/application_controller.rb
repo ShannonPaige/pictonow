@@ -12,7 +12,4 @@ class ApplicationController < ActionController::Base
     @service ||= InstagramService.new(current_user)
   end
 
-  def require_current_user
-    render file: "./test/public/404" unless current_user
-  end
 end

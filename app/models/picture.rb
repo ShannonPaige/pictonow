@@ -1,5 +1,4 @@
 class Picture
-
   def self.all(service)
     recent_pics = service.pictures
     pics = recent_pics[:data].map { |picture| build_object(picture) }

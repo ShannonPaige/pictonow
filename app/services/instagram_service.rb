@@ -12,7 +12,10 @@ class InstagramService
 
   def pictures
     parse(connection.get("users/self/media/recent"))
+  end
 
+  def user_info
+    parse(connection.get("users/self"))
   end
 
   private
