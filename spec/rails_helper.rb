@@ -41,12 +41,12 @@ RSpec.configure do |config|
     provider: 'instagram',
     uid: 'ig_uid',
     info: {
-        nickname: "ig_nickname",
-        name:     "ig_name",
-        email:    "ig_email",
-        image:    "ig_image",
-        bio:      "ig_bio",
-        website:  "ig_website",
+      nickname: "ig_nickname",
+      name:     "ig_name",
+      email:    "ig_email",
+      image:    "ig_image",
+      bio:      "ig_bio",
+      website:  "ig_website",
     },
     credentials: {
       token: "ig_token",

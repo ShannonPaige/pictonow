@@ -15,12 +15,12 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $(".caption").hover(
+  $(".thumbnail").hover(
     function () {
-      $(this).addClass('overlay');
+      $(this).children('.caption').addClass('overlay');
     },
     function () {
-      $(this).removeClass('overlay');
+      $(this).children('.caption').removeClass('overlay');
     }
   );
 });
