@@ -13,3 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+  $(".caption").hover(
+    function () {
+      $(this).addClass('overlay');
+    },
+    function () {
+      $(this).removeClass('overlay');
+    }
+  );
+});

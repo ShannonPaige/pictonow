@@ -48,9 +48,25 @@ img.img-circle.img-thumbnail.home-image {
 }
 
 .thumbnail {
-    height: 500px;
+    height: 325px;
 }
 
 .profile {
   padding: 10px 0px 25px 0px;
+}
+
+// .overlay {
+//   background: rgba(0, 0, 0, 0.5);
+// }
+
+.overlay {
+  position: absolute;
+  top: 90px;
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 310px;
+}
+
+.thumbnail .overlay {
+  padding: 9px;
+  color: white;
 }
