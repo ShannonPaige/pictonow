@@ -17,10 +17,10 @@
 $(document).ready(function() {
   $(".thumbnail").hover(
     function () {
-      $(this).children('.caption').addClass('overlay');
+      $(this).children('.caption').toggleClass('hide').addClass('overlay');
     },
     function () {
-      $(this).children('.caption').removeClass('overlay');
+      $(this).children('.caption').toggleClass('hide').removeClass('overlay');
     }
   );
 });

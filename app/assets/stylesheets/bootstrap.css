@@ -273,7 +273,7 @@ th {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings' !important;
+  font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -281,8 +281,9 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .glyphicon-asterisk:before {
-   "\002a";
+  content: "\002a";
 }
 .glyphicon-plus:before {
   content: "\002b";

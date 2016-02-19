@@ -9,6 +9,7 @@ require 'capybara/rails'
 require 'capybara/rspec'
 require "database_cleaner"
 require "simplecov"
+require "vcr"
 
 SimpleCov.start "rails"
 
@@ -36,6 +37,12 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  VCR.configure do |config|
+    config.cassette_library_dir = 'spec/vcr'
+    config.hook_into :webmock
+    # config.allow_http_connections_when_no_cassette = true
+  end
+
   OmniAuth.config.test_mode = true
   OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
     provider: 'instagram',
@@ -49,7 +56,7 @@ RSpec.configure do |config|
       website:  "ig_website",
     },
     credentials: {
-      token: "ig_token",
+      token: ENV["token"],
     }
   })
 

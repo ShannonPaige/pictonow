@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get 'auth/instagram',                                   as: :login
   get 'auth/instagram/callback',  to: 'sessions#create'
   get 'logout',                   to: 'sessions#destroy', as: :logout
-  get 'user',                     to: 'users#show'
+  get 'users',                    to: 'users#show'
 
 end
