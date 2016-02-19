@@ -1,0 +1,28 @@
+<div class="row profile">
+  <div class="col-md-2"></div>
+  <div class="col-md-2">
+    <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
+  </div>
+  <div class="col-md-4">
+    <h1 class="home"> <%= current_user.nickname %></h1>
+    <h2 class="home"> <%= current_user.name %></h2>
+    <h4 class="home"> <%= current_user.bio %> </h4>
+    <h4 class="home"> <%= current_user.website %> </h4>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="following"><%= @user_data.counts[:media] %> posts</h4>
+      </div>
+      <div class="col-md-4">
+        <h4 class="following"><%= @user_data.counts[:followed_by] %> followers</h4>
+      </div>
+      <div class="col-md-4">
+        <h4 class="following"><%= @user_data.counts[:follows] %> following</h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <%= link_to "Logout", "/logout", class: "btn btn-lg btn-default btn-home" %>
+  </div>
+  <div class="col-md-2"></div>
+</div>

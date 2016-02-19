@@ -1,0 +1,14 @@
+<div class="col-sm-6 col-md-3">
+  <div class="thumbnail">
+    <%= image_tag picture.images[:low_resolution][:url], class: "img-responsive" %>
+    <div class="caption hide">
+      <h4><%= picture.caption[:text] %></h4>
+      <p>Likes:
+        <%= picture.likes[:count] %> ||
+        Comments:
+        <%= picture.comments[:count] %></p>
+        <p>Click for full info</p>
+        <%= link_to "", users_picture_path(picture[:id]) %>
+    </div>
+  </div>
+</div>
