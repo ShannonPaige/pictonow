@@ -7,9 +7,9 @@
     <div class="col-md-4">
       <h1 class="home"> <%= current_user.nickname %></h1>
       <h2 class="home"> <%= current_user.name %></h2>
-      <h2 class="home"> <%= current_user.email %> </h2>
-      <h2 class="home"> <%= current_user.bio %> </h2>
-      <h2 class="home"> <%= current_user.website %> </h2>
+      <h4 class="home"> <%= current_user.email %> </h4>
+      <h4 class="home"> <%= current_user.bio %> </h4>
+      <h4 class="home"> <%= current_user.website %> </h4>
 
       <div class="row">
         <div class="col-md-4">
@@ -39,7 +39,8 @@
               <%= picture.likes[:count] %> ||
               Comments:
               <%= picture.comments[:count] %></p>
-              <a href="http://google.com"></a>
+              <p>Click for full info</p>
+              <%= link_to "", users_picture_path(picture[:id]) %>
           </div>
         </div>
       </div>

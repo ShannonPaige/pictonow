@@ -14,6 +14,18 @@ class InstagramService
     parse(connection.get("users/self/media/recent"))
   end
 
+  def find_pic(media_id)
+    parse(connection.get("media/#{media_id}"))
+  end
+
+  def comments(media_id)
+    parse(connection.get("media/#{media_id}/comments"))
+  end
+
+  def likes(media_id)
+    parse(connection.get("media/#{media_id}/likes"))
+  end
+
   def user_info
     parse(connection.get("users/self"))
   end
