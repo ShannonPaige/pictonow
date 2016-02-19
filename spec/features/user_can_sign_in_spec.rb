@@ -9,7 +9,7 @@ describe "the signin process" do
     end
     expect(page).to have_content 'ig_nickname'
     expect(page).to have_content 'ig_name ig_email ig_bio ig_website'
-    expect(page).to have_content '264 posts 257 followers 132 following'
+    expect(page).to have_content '264 posts 258 followers 132 following'
     expect(page).to have_content 'Logout'
     expect(page).to have_css "img[src*='12750367_830093693789464_515302271_n.jpg']"
   end
