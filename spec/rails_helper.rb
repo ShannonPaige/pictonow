@@ -44,7 +44,8 @@ RSpec.configure do |config|
   end
 
   OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new({
+  OmniAuth.config.mock_auth[:instagram] = OmniAuth::AuthHash.new(
+  {
     provider: 'instagram',
     uid: 'ig_uid',
     info: {

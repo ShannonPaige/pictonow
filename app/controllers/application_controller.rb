@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
 
   def service
-    @service ||= InstagramService.new(current_user)
+    @service ||= InstagramService.new(current_user) if current_user
   end
 
 end

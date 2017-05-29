@@ -8,8 +8,10 @@
     <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <h3><%= @picture.caption[:text] %></h3>
-          <hr />
+          <% if  @picture.caption%>
+            <h3><%= @picture.caption[:text] %></h3>
+            <hr />
+          <% end %>
           <h4>Liked by:</h4>
           <p><%= @picture.likes[:count] %> users</p>
           <h4>Sandbox Likes From: </h4>
